@@ -1,0 +1,10 @@
+'''Band Name Generator
+ask for city user grew up in
+ask for pet's name
+combine two strings to produce band name
+Your band name could be " " and add a space between the two words
+'''
+print("Welcome to the Band Name Generator\n")
+city = input("What the name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+print("Your band name could be " + city + " " + pet)

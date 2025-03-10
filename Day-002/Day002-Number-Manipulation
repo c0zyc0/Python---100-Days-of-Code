@@ -1,0 +1,24 @@
+"""
+
+"""
+
+bmi = 84 / 1.65 ** 2
+print(bmi) #prints bmi
+print(int(bmi)) #flooring - cuts off decimals
+print(round(bmi)) #rounds based on first decimal place
+print(round(bmi, 3)) #round to the 3rd decimal place
+
+#Accumulation +=, -=, *=, /=
+score = 0
+score += 1 #adds 1 to score
+
+#f-Strings
+# print("Your score is " + score) #type error
+print("Your score is " + str(score)) #type cast score to string instead of int
+
+score = 0
+height = 1.8
+is_winning = True
+
+print(f"Your score is = {score}, your height is = {height}. You are winning is {is_winning}.")
+

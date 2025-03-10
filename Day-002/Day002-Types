@@ -1,0 +1,32 @@
+"""
+Type Error, Checking, and Conversion
+
+
+
+"""
+
+#len(12345) #doesnt like working with Integers - gives Type Error
+
+len("12345") #fixes error
+
+#Type Checking
+print(type("Hello")) #String
+print(type(123))     #Int
+print(type(12.34))   #Float
+print(type(True))    #Boolean
+
+#Type Conversion or Type Casting - converting one data type to another
+int("123") #converting string "123" to int 123
+print("123" + "345") #Concantenates string
+print(int("123") + int("345")) #adds two values together
+
+#int("abc") # Value Error
+
+int()
+float()
+str()
+bool()
+
+print("Number of letter in your name: " + str(len(input("Enter your name\n"))))
+
+

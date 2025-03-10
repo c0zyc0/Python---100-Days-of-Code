@@ -1,0 +1,24 @@
+#capturing input and naming it "name"
+'''name = input("What is your name?")
+print(name)
+print(len(name)) #length of string "name"
+'''
+# from operator import length_hint
+
+#print(len(input("What is your name?")))
+
+#input("What is your name?")
+'''
+username = input("What is your name?")
+length = len(username)
+print(length)
+
+'''
+glass1 = "milk"
+glass2 = "juice"
+
+#switch contents of the variables in 3 lines of code
+this.glass1 = glass1
+glass1 = glass2
+glass2 = this.glass1
+print(glass1, glass2)

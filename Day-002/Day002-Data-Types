@@ -1,0 +1,29 @@
+"""
+Data Types: String, Integer, Floats, Booleans
+
+"""
+
+"Hello" #string
+
+print("Hello"[0]) #prints first character in "Hello" - SUBSCRIPTING
+print("Hello"[4]) #prints last character in "Hello"
+print("Hello"[-1]) #prints last character in "Hello"
+
+"123" #String, not integer
+print("123" + "345") #concantenates strings, not adds - 123345
+
+#Integer - Number without decimal places
+print(123+345) #prints sum of two numbers
+
+print(123_345_567) #Large integer - underscore replaced commas
+
+#Float - floating point number
+print(3.14159)
+
+#Boolean - always capital T or F
+print(True)
+print(False)
+
+
+
+

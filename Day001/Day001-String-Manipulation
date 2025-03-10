@@ -1,0 +1,9 @@
+#New Line \n
+#print("Hello world!\nHello world!")
+print("test\nprint")
+
+#string concatenation
+print("Hello" + " " + "xkyn3t")
+
+
+

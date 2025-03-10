@@ -1,0 +1,20 @@
+"""
+
+"""
+
+print("My age: " + str(12))
+print(123 + 456) #addition
+print(7-3)       #subtraction
+print(3*2)       #multiplication
+print(6 / 3)     #division (with remainder)
+print(6 // 3)    #without remainder
+print(2**2)      #exponent
+
+#PEMDAS - Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction
+#()
+#**
+#* OR /
+#+ OR -
+#Most to the left will come first between (* OR /) and (+ OR -)
+
+

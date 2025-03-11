@@ -1,0 +1,39 @@
+""" if/else
+
+if condition:
+    do this
+else:
+    do this
+
+"""
+
+# water if/else
+water_level = 50
+#if water level is greater than 80
+if water_level > 80:
+    print("Drain water")
+#if water level is less than 80
+else:
+    print("Continue")
+
+#height
+
+print("Welcome to the roller coaster!")
+height = int(input("What is your height in cm?"))
+#if height is greater than 120
+if height >= 120:
+    print("You can ride the roller coaster!")
+#if height is less than 120
+else:
+    print("Sorry, you have to grow taller before you ride.")
+
+"""
+> greater than
+< less than
+>= greater or equal to
+<= less than or equal to
+== equal to
+!= or /= not equal to
+
+"""
+

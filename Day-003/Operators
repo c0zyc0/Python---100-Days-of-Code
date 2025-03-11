@@ -1,0 +1,66 @@
+"""
+Modulo Operator % - only prints remainder
+
+10 / 3 = 3.333
+10 % 3 = 1
+
+"""
+#Coding Challenge
+
+#check if user input is odd or even. Print "Odd" if odd, else print "Even"
+
+user_input = float(input("Enter a number\n"))
+#if remainder is 0, user_input is even
+if user_input % 2 == 0:
+    print("Even")
+#if remainder does not equal 0, user_input is odd
+else:
+    print("Odd")
+
+#roller coaster - check age and height
+
+#Nested if / else statement
+
+"""
+if condition:
+    if condition:
+    else:
+else:
+"""
+
+#roller coaster height and age
+height = int(input("What is your height in cm?"))
+bill = 0
+#if height is greater than or equal to 120
+if height >= 120:
+    print("You can ride the roller coaster!")
+    # different ages equal different ticket prices
+    # <12 = $5; 12 - 18 = $7; <18 = $12
+    age = int(input("What is your age?"))
+    #if age is less than or equal to 12
+    if age <= 12:
+        print("Child tickets are $5")
+        bill += 5
+    #if age is between 12 and 18
+    elif age <= 18:
+        print("Young Adult tickets are $7")
+        bill += 7
+    #if age is greater than 18
+    else:
+        print("Adult tickets are $12")
+        bill += 12
+
+    #ask user to take photo - y for Yes, n for No
+    take_photo = input("Do you want to take a photo? Type y for Yes and n for No")
+    #if take_photo equals y, add $3 to their bill
+    if take_photo == "y":
+        #adds $3 to their bill
+        bill += 3
+
+    #prints final bill
+    print(f"Your final bill is ${bill}" )
+#if height is less than 120
+else:
+    print("Sorry, you have to grow taller before you ride.")
+
+

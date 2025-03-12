@@ -1,0 +1,59 @@
+"""
+
+My own spin on what would have been a pizza program asking for what size pizza (S, M, or L)
+and adding price associated with that size, asking if the user wants pepperoni (Y or N) and 
+adding price associated with pizza size for pepperoni, and asking if the user wants cheese 
+(Y or N).
+
+"""
+
+print("Welcome to FazBear Pizzeria!")
+
+total = 0 # Print total bill at the end
+size = input("What size FredBear do you want? S, M, or L:\n") #$15
+
+# Add amount to total based on what size FredBear the customer wants
+# Price for FredBear based on size: S - $15, M - $20, L - $25
+
+if size == 'S':
+    total += 15
+elif size == 'M':
+    total += 20
+
+# Add if code for processing input error not used at this point
+else:
+    total += 25
+
+# elif size == 'L':
+    # total += 25
+# else:
+    # print("Try again.")
+
+# Add amount to total if customer wants an extra outfit for FredBear based on his size
+# Price for outfit based on FredBear size: S - $7, M, $10, L - $13
+
+extraOutfit = input("Would you like to add an extra outfit for FredBear? Y or N:\n")
+
+if extraOutfit == 'Y':
+    if size == 'S':
+        total += 7
+    elif size == 'M':
+        total += 10
+    else:
+        total += 13
+
+# Add amount for shoes based on size of FredBear to total
+# Price for shoes based on FredBear size: S - $3, M - $5, L - $7
+
+addShoes = input("Would you like to add shoes to FredBear's outfit? Y or N:\n")
+
+if addShoes == 'Y':
+    if size == 'S':
+        total += 3
+    elif size == 'M':
+        total += 5
+    else:
+        total += 7
+
+# Print final total
+print(f"Your final bill is: ${total}.\n")

@@ -1,0 +1,34 @@
+"""
+Treasure Island - Choose your own adventure game (base program)
+
+
+"""
+
+# Welcome to Treasure Island.
+print("Welcome to Treasure Island.\n")
+# Your mission is to find the treasure.
+print("Your mission is to find the treasure.\n")
+# You're at a cross road. Where do you want to go?
+    # Type "Left" or "Right."
+# left - continue to next step; right - game over
+leftOrRight = input("You are at a cross road. Where do you want to go?\n\tType \"left\" or \"right\"")
+if leftOrRight == "left":
+    # continue to next step
+    waitOrSwim = input("You've come to a lake. There is an island in the middle of the lake.\n\tType \"wait\" to wait for the boat. Type \"swim\" to swim across.\n")
+    # wait - continue to next step; swim aka else - game over
+    if waitOrSwim == "wait":
+        # continue to next step
+        doorColor = input("You arrive at the island unharmed. There is a house with three doors.\n\tOne red, one yellow and one blue. Which color do you choose?\n")
+        # yellow - you win; blue and red aka else - game over
+        if doorColor == "yellow":
+            # you win
+            print("YOU WIN!")
+        else:
+            # doorColor - Game Over
+            print("GAME OVER")
+    else:
+        # waitOrSwim - Game Over
+        print("GAME OVER!")
+else:
+    # leftOrRight - Game Over
+    print("GAME OVER!")

@@ -1,0 +1,59 @@
+"""
+
+A and B - both must be true
+C or D - only one needs to be true
+not E - not this option
+
+Python Console - used to run code quickly
+
+"""
+# AND
+True and True # result True
+True and False # result False
+# OR
+True or True # result True
+False or True # results True
+# NOT
+not True # result False
+not False # result True
+
+#Add another age range (45 - 55) and price +$0 to roller coaster program
+
+#roller coaster height and age
+height = int(input("What is your height in cm?\n"))
+bill = 0
+#if height is greater than or equal to 120
+if height >= 120:
+    print("You can ride the roller coaster!")
+    # different ages equal different ticket prices
+    # <12 = $5; 12 - 18 = $7; <18 = $12
+    age = int(input("What is your age?\n"))
+    #if age is less than or equal to 12
+    if age <= 12:
+        print("Child tickets are $5.")
+        bill += 5
+    #if age is between 12 and 18
+    elif age <= 18:
+        print("Young Adult tickets are $7.")
+        bill += 7
+    # adding age range
+    elif age >= 45 and age <= 55:
+        # specifying what is happening here
+        bill += 0
+    # other than the ages above
+    else:
+        print("Adult tickets are $12.")
+        bill += 12
+
+    #ask user to take photo - y for Yes, n for No
+    take_photo = input("Do you want to take a photo? Type y for Yes and n for No.\n")
+    #if take_photo equals y, add $3 to their bill
+    if take_photo == "y":
+        #adds $3 to their bill
+        bill += 3
+
+    #prints final bill
+    print(f"Your final bill is ${bill}." )
+#if height is less than 120
+else:
+    print("Sorry, you have to grow taller before you ride.")

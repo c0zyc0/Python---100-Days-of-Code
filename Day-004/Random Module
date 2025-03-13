@@ -1,0 +1,43 @@
+"""
+Deterministic - repeated actions in a fully predictable way
+
+sudo random number generator - mersenne twister used
+
+khan academy - sudo random number generators [free video]
+
+
+
+"""
+# example
+# random module
+import random
+# import my_module # importing created module - has to be a python file
+
+# randNum = random.randint(1,10) # including 10
+# print(randNum)
+
+# print(my_module.myFavNum) # printing result of this module? calling like a function?
+
+# random.random() - float between 0.0 inclusive and 1.0 exclusive
+randNum0to1 = random.random()
+print(randNum0to1)
+
+# random.uniform() - float inclusive to a and b
+randFloat = random.uniform(1, 10)
+print(randFloat)
+
+# create coin flip program
+# prints "Heads" or "Tails" - depends on random number generated
+
+# creating headsOrTails variable and setting it to choose randomly between 1 and 2
+# heads = 1; tails = 2
+headsOrTails = random.randint(1,2)
+heads = 1
+tails = 2
+
+# determining what prints depending on the random int headsOrTails
+if headsOrTails == 1:
+    print("Heads")
+else:
+    print("Tails")
+

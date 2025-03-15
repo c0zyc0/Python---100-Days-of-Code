@@ -1,0 +1,120 @@
+"""
+
+Rock, Paper, Scissors Game
+
+rock beats scissors
+scissors beats paper
+paper beats rock
+
+# 0 beats 2 -
+# 2 beats 1
+# 1 beats 0
+
+"""
+import random
+# Rock Paper Scissors ASCII Art
+
+# Rock
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+# Paper
+paper = '''
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+# Scissors
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+# creating list rock, paper, scissors art - index matches prompt for each choice
+rpsGraphics = [rock, paper, scissors]
+
+# prompting for user's choice
+userChoice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, and 2 for Scissors.\n"))
+
+# input validation - kicks user out of program if incorrect input
+if userChoice >= 3 or userChoice < 0:
+    print("Invalid input. Try again.")
+    exit()
+
+# converting int from userChoice to string userPicks
+if userChoice == 0:
+    userPicks = "Rock"
+elif userChoice == 1:
+    userPicks = "Paper"
+else:
+    userPicks = "Scissors"
+
+# obj capturing image for user's choice
+userGraphic = rpsGraphics[userChoice]
+
+# printing user choice graphic
+print(f"You chose: {userPicks}\n{userGraphic}\n")
+
+# generating pc's choice using random int in range 0 to 2 inclusive
+pcChoice = random.randint(0,2)
+
+# converting int from pcChoice to string userPicks
+if pcChoice == 0:
+    pcPicks = "Rock"
+elif pcChoice == 1:
+    pcPicks = "Paper"
+else:
+    pcPicks = "Scissors"
+
+# obj capturing image for pc's choice
+pcGraphic = rpsGraphics[pcChoice]
+
+# printing pc choice graphic
+print(f"Computer chose: {pcPicks}\n{pcGraphic}\n")
+
+# comparing userChoice to pcChoice to see who wins
+if userChoice == 0:
+    if pcChoice == 0:
+        # result - tie
+        print("It's a draw!")
+    elif pcChoice == 1:
+        # result - pc wins
+        print("You lose!")
+    else:
+        # result - user wins
+        print("You win!")
+
+elif userChoice == 1:
+    if pcChoice == 0:
+        # result - user wins
+        print("You win!")
+    elif pcChoice == 1:
+        # result - tie
+        print("It's a draw!")
+    else:
+        # result - pc wins
+        print("You lose!")
+else:
+    if pcChoice == 0:
+        # result - pc wins
+        print("You lose!")
+    elif pcChoice == 1:
+        # result - user wins
+        print("You win!")
+    else:
+        # result - tie
+        print("It's a draw")

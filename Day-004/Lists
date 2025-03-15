@@ -1,0 +1,29 @@
+"""
+
+Lists:
+
+fruits = [item1, item2]
+
+store many pieces of related data
+order is determined by the list
+
+
+"""
+
+fruits = ["cherry", "berry"]
+
+statesOfAmerica = ["Delaware", "Pennsylvania"]
+
+# list index starts at 0
+# count index by shifts to the right starting at 0 and adding 1
+print(statesOfAmerica[0])
+# -1 is the last index - use this to navigate the index backwards
+print(statesOfAmerica[-1])
+# changes index 1 to x instead of Pennsylvania
+statesOfAmerica[1] = "x"
+# prints new list after change
+print(statesOfAmerica)
+# adds "c0zyc0" to end of list
+statesOfAmerica.append = "c0zyc0"
+
+

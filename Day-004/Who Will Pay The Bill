@@ -1,0 +1,37 @@
+"""
+Look through friends list
+
+randomisation and list
+
+print out a name randomly each time
+
+"""
+import random
+
+friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+
+# randomly prints a name from friends list
+# print(friends[].random())
+
+# obj = random - idk if this works
+# randFriends = random.random()
+
+# obj = random num from 0 to 4
+# randFriend = random.randint(0,4)
+
+# prints random name from friends list
+# print(friends[randFriend])
+
+# obj = length of friends list
+friendAmount = len(friends) - 1
+
+# print(friendAmount) - testing obj
+
+# prints random name from friends list
+print(friends[random.randint(0, friendAmount)])
+
+# prints name in index 1
+# print(friends[1])
+
+
+

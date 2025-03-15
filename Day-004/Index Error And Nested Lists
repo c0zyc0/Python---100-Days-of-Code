@@ -1,0 +1,17 @@
+"""
+
+
+"""
+
+# nested lists
+
+# list of both fruits and veggies that contain the most pesticides
+dirtyDozen = ["strawberries", "spinach", "kale", "nectarines", "apples", "grapes", "peaches", "cherries", "pears", "tomatoes", "celery", "potatoes"]
+
+fruits = []
+
+vegetables = []
+
+# nested list
+both = [fruits, vegetables]
+
